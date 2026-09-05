@@ -17,9 +17,10 @@ cask "mozkey" do
     Unofficial personal distribution; no Developer ID signing or notarization.
     Replaces existing Mozc. Administrator authentication is required.
     Add Mozc in System Settings > Keyboard > Text Input after installation.
-    Log out and back in if needed. Switch to ABC before upgrading or uninstalling.
+    Log out and back in if needed. Log out after uninstalling to end running processes.
     The upstream installer terminates your processes named llama-server as well
     as Mozc processes. User dictionary, learning and settings are not zapped.
-    GUI installation, upgrade and uninstall have not yet been tested.
+    Installation, basic input, uninstall and reinstall were tested on Apple Silicon.
+    Upgrading to a newer version has not yet been tested.
   EOS
 end
