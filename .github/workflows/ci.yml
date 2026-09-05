@@ -1,0 +1,17 @@
+name: Cask checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - run: ruby -c Casks/mozkey.rb
+      - run: brew style Casks/mozkey.rb
+      - run: python3 -m py_compile scripts/update-cask.py
