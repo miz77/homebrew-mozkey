@@ -1,6 +1,6 @@
 cask "mozkey" do
-  version "2026.09.06.1"
-  sha256 "dde9f665be3f7d0632e21b9a8b82319aebc0178bd967e03848063f26c4d35b87"
+  version "2026.09.08.1"
+  sha256 "f9fd89f098c35af2d0c76d7d30bf2022de54921c268ea84fb741801c197f8c22"
 
   url "https://github.com/miz77/mozkey/releases/download/macos-v#{version}/MozKey-macOS-Universal-#{version}.zip"
   name "MozKey"
