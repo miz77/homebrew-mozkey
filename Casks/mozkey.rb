@@ -1,6 +1,6 @@
 cask "mozkey" do
-  version "2026.09.08.1"
-  sha256 "f9fd89f098c35af2d0c76d7d30bf2022de54921c268ea84fb741801c197f8c22"
+  version "2026.09.22.1"
+  sha256 "82afcfb55b47b0faf4a5dd56ef62557412d2fa706a41b24c2081de873a94d4ba"
 
   url "https://github.com/miz77/mozkey/releases/download/macos-v#{version}/MozKey-macOS-Universal-#{version}.zip"
   name "MozKey"
@@ -20,7 +20,7 @@ cask "mozkey" do
     Log out and back in if needed. Log out after uninstalling to end running processes.
     The upstream installer terminates your processes named llama-server as well
     as Mozc processes. User dictionary, learning and settings are not zapped.
-    Installation, basic input, uninstall and reinstall were tested on Apple Silicon.
-    Upgrading to a newer version has not yet been tested.
+    Previous releases were tested for installation, input, upgrade and reinstall
+    on Apple Silicon. See each release's notes for version-specific validation.
   EOS
 end
